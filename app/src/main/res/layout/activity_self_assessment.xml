@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfAssessment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="239dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Are you experiencing  any of following: 1.painful swollen joints,2.joint stiffness,3.Joint deformities,4.joint pain that is worse in morning"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchArthritis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="48dp"
+        android:text="Yes"
+        app:layout_constraintBottom_toTopOf="@+id/switchHeartDisease"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="236dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Are you experincing any of following: 1.Chest pain,2.Shortness of breath,3.Pain and Weakness,4.Pain in Neck and Jaw"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDepression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Switch
+        android:id="@+id/switchHeartDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="48dp"
+        android:text="Yes"
+        app:layout_constraintBottom_toTopOf="@+id/switchDepression"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchArthritis" />
+
+    <TextView
+        android:id="@+id/textViewDepression"
+        android:layout_width="229dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Areyou experincing any of following : 1.Feeling sad ,emptiness and hopelessness ,2.frustration over small matters,3.Sleep disturbbances,4.Tiredness and Reduced appetite"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Switch
+        android:id="@+id/switchDepression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="48dp"
+        android:text="Yes"
+        app:layout_constraintBottom_toTopOf="@+id/switchDiabetes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchHeartDisease" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="229dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Are you experincing any of followong :1.Frequent urination , 2.Increased thirst , 3.Always feeling hungry , 4.feeling very tired , 5.Blurry vision"
+        app:layout_constraintBottom_toTopOf="@+id/editDateAssessment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepression" />
+
+    <Switch
+        android:id="@+id/switchDiabetes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="306dp"
+        android:text="Yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchDepression" />
+
+    <EditText
+        android:id="@+id/editDateAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDoneAssessment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/buttonDoneAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="18dp"
+        android:text="Done"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHomeAssessment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDateAssessment" />
+
+    <Button
+        android:id="@+id/buttonHomeAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back To Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDoneAssessment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

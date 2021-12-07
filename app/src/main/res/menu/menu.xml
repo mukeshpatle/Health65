@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menuProfile"
+        android:title="Profile" >
+        <menu>
+            <item
+                android:id="@+id/menuViewProfile"
+                android:title="View Profile" />
+            <item
+                android:id="@+id/menuEditProfile"
+                android:title="Edit Profile" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menuConsultWithDoctor"
+        android:title="Consult with doctor" >
+        <menu>
+            <item
+                android:id="@+id/menuConsultOnPracto"
+                android:title="Consult on Practo" />
+            <item
+                android:id="@+id/menuConsultOnMfine"
+                android:title="Consult on Mfine" />
+            <item
+                android:id="@+id/menuConsultOnTataHealth"
+                android:title="Consult on TATA health" />
+            <item
+                android:id="@+id/menuConsultOnApollo247"
+                android:title="Consult on Appollo 24/7" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menuOrderMedicine"
+        android:title="Order Medicine" >
+        <menu>
+            <item
+                android:id="@+id/menuOrderOnPharmeasy"
+                android:title="Order on Pharmeasy" />
+            <item
+                android:id="@+id/menuOrderOnNetmeds"
+                android:title="Order on Netmeds" />
+            <item
+                android:id="@+id/menuOrderOn1mg"
+                android:title="Order on 1mg" />
+            <item
+                android:id="@+id/menuOrderOnApolloPharmacy"
+                android:title="Order on Apollo Pharmacy" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menuSelfAssessment"
+        android:title="Weekly self-assessment" />
+    <item
+        android:id="@+id/menuMonthlyReport"
+        android:title="Monthly Report" />
+    <item
+        android:id="@+id/menuDietPlan"
+        android:title="Diet plan" >
+        <menu>
+            <item
+                android:id="@+id/menuViewDietPlan"
+                android:title="View Diet Plan" />
+            <item
+                android:id="@+id/menuEditDietPlan"
+                android:title="Edit Diet Plan" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menuEmergencyContacts"
+        android:title="Emergency Contacts" >
+        <menu>
+            <item
+                android:id="@+id/menuViewEmergencyContacts"
+                android:title="View Emergency Contacts" />
+            <item
+                android:id="@+id/menuEditEmergencyContacts"
+                android:title="Edit Emergency Contacts" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menuBlogs"
+        android:title="Blogs" >
+        <menu>
+            <item
+                android:id="@+id/menuHealthline"
+                android:title="View blogs on Healthline" />
+            <item
+                android:id="@+id/menuHealthharvard"
+                android:title="View blogs on Health Harward" />
+            <item
+                android:id="@+id/menuTinytrips"
+                android:title="View blogs on Tinytrips" />
+            <item
+                android:id="@+id/menuPurdueglobal"
+                android:title="View blogs on Purdue Global" />
+        </menu>
+    </item>
+
+</menu>
